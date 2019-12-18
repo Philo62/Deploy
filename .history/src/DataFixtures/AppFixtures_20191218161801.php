@@ -1,0 +1,19 @@
+<?php
+
+namespace App\DataFixtures;
+use src/Entity/Property;
+use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\Persistence\ObjectManager;
+
+class AppFixtures extends Fixture
+{
+    public function load(ObjectManager $manager, Property $prop)
+    {
+        // $product = new Product();
+        // $manager->persist($product);
+
+        $prop = new property();
+        $prop = 
+        $manager->flush();
+    }
+}
